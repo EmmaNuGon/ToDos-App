@@ -1,4 +1,5 @@
 import React from 'react'
+import "../CreateTodoButton/TodoButton.css"
 
 function CreateTodoButton(props) {
 
@@ -7,7 +8,7 @@ function CreateTodoButton(props) {
   }
 
   return (
-   <button onClick={() => onClicButton("click")}>+</button>
+   <button  className='CreateTodoButton' onClick={() => onClicButton("click")}>+</button>
   )
 }
 
