@@ -6,8 +6,8 @@ import { TodoContext } from "../TodoContext";
 function TodoCounter() {
   const { totalTodos, completedTodos } = React.useContext(TodoContext);
 
-  if (completedTodos === 0 && totalTodos > 0) {
-    return <h1>No has completado ningun TODOs</h1>;
+  if (!completedTodos && !totalTodos) {
+    return <h1>No tienes TODOs</h1>;
   }
   return (
     <div className="todoCounter">
